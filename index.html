@@ -96,9 +96,11 @@ function dateFunction6() {
 var date6 = new Date();
 //日付オブジェクトから「年」を取得する
 var year = date6.getFullYear();
+var month = date6.getMonth()+1;
+var date = date6.getDate();
 //段落タグの中身を"date6"で置き換える
 var pelem006 = document.getElementById("date006");
-pelem006.innerHTML = "今は" + year + "年です。";
+pelem006.innerHTML = "今は" + year + "年"+ month + "月" + date + "日です。";
 }
 </script>
 </body>
