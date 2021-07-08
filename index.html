@@ -86,5 +86,18 @@
       <p>Learn to Code, Learn to be Creative.</p>
     </div>
   </footer>
+  <h1>JavaScript　入門</h1>
+<p>ボタンをクリックすると日時を表示します。</p>
+<button onclick="dateFunction2()">日時を表示</button>
+<p id="date002">ここに２０１７年８月８日の日付が表示されます。</p>
+<script>
+function dateFunction2() {
+//日付オブジェクトの作成
+var date2 = new Date(1502118000000);
+//段落タグの中身を"date2"で置き換える
+var pelem002 = document.getElementById("date002");
+pelem002.innerHTML = date2;
+}
+</script>
 </body>
 </html>
